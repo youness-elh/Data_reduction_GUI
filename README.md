@@ -20,3 +20,7 @@ installer
 * validate the input path before running from data base
 * modify specimen in database
 * adapted to other tests 
+
+## References
+
+This work is done in Fraunhofer IWM at the Structural Integrity and Fracture Mechanics group under the supervision of Mr. Ali Aydin and Mr. Igor Varfolomeev.

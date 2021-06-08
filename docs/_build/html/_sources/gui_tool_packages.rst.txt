@@ -1,0 +1,37 @@
+gui\_tool\_packages package
+===========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+   gui_tool_packages.code
+
+Submodules
+----------
+
+gui\_tool\_packages.gui\_1 module
+---------------------------------
+
+.. automodule:: gui_tool_packages.gui_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+gui\_tool\_packages.gui\_2 module
+---------------------------------
+
+.. automodule:: gui_tool_packages.gui_2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: gui_tool_packages
+   :members:
+   :undoc-members:
+   :show-inheritance:

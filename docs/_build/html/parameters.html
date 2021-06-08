@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>parameters module &mdash; GUI  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pipeline module" href="pipeline.html" />
+    <link rel="prev" title="inputs module" href="inputs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GUI
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">gui_tool_packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="inputs.html">inputs module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">parameters module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html">pipeline module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GUI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">gui_tool_packages</a> &raquo;</li>
+        
+      <li>parameters module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/parameters.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-parameters">
+<span id="parameters-module"></span><h1>parameters module<a class="headerlink" href="#module-parameters" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="parameters.Prepare_parameters">
+<em class="property">class </em><code class="sig-prename descclassname">parameters.</code><code class="sig-name descname">Prepare_parameters</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">inputfile</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Structure the parameters in a dataframe table, it enherits from ‘Inputable’ class.</p>
+<dl class="method">
+<dt id="parameters.Prepare_parameters.Add_IST">
+<code class="sig-name descname">Add_IST</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.Add_IST" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Add_IST insert: a float column to the self.inputable dataframe,</dt><dd><p>It is the initial extensometer value: EXT_IST_0 from the raw data file.
+It requires the attribute self.inputable to be already filled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.Export">
+<code class="sig-name descname">Export</code><span class="sig-paren">(</span><em class="sig-param">Output_file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.Export" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export based on the given excel writer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.Unique_cycle">
+<code class="sig-name descname">Unique_cycle</code><span class="sig-paren">(</span><em class="sig-param">rlts_Dehnung</em>, <em class="sig-param">rlts_Spannung</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.Unique_cycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Join the reduced signal for strain and stress to get the hysteresis of the reduced data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.data_onecyle">
+<code class="sig-name descname">data_onecyle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.data_onecyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the target data of one cycle in order to do fitting.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.data_reduction">
+<code class="sig-name descname">data_reduction</code><span class="sig-paren">(</span><em class="sig-param">i_cycle</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.data_reduction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Strat data reduction for a given cycle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>(int) the given cycle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.distance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>euclidean distance between two points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.eps_fit">
+<code class="sig-name descname">eps_fit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.eps_fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fitting: finding the optimal algo tolererance to get desired points per cycle for both strain and stress</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.init_Parameters">
+<code class="sig-name descname">init_Parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.init_Parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize: all parameters</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.init_Rowdata">
+<code class="sig-name descname">init_Rowdata</code><span class="sig-paren">(</span><em class="sig-param">ohne_Zyklus=True</em>, <em class="sig-param">ohne_nan=True</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.init_Rowdata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cleaning the row data from missing value.</p>
+<p>-Note: cleaning means also removing the first test cycle (=0).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.midata_hysteresis">
+<code class="sig-name descname">midata_hysteresis</code><span class="sig-paren">(</span><em class="sig-param">plot=True</em>, <em class="sig-param">save=False</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.midata_hysteresis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize: the middle hysteresis which is either the 50% cycle in case the the number of cycles till crack initiation is given or the 10% cycle if not.</p>
+<p>:param plot (boolean) True-&gt; plot, False-&gt; not plot
+:para save (boolean) True-&gt; save, False-&gt; not save
+:return plot if required</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.outputfile">
+<code class="sig-name descname">outputfile</code><span class="sig-paren">(</span><em class="sig-param">Output_file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.outputfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>:param output file name
+:return: The output excel file writer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.point_line_distance">
+<code class="sig-name descname">point_line_distance</code><span class="sig-paren">(</span><em class="sig-param">point</em>, <em class="sig-param">start</em>, <em class="sig-param">end</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.point_line_distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.rdp">
+<code class="sig-name descname">rdp</code><span class="sig-paren">(</span><em class="sig-param">points</em>, <em class="sig-param">epsilon</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.rdp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reduces a signal to a simplified one without losing relevant points, using: The Ramer-Douglas-Peucker algorithm roughly ported from             the pseudo-code provided by <a class="reference external" href="http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm">http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm</a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.run_reduced_hyst">
+<code class="sig-name descname">run_reduced_hyst</code><span class="sig-paren">(</span><em class="sig-param">plot=True</em><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.run_reduced_hyst" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the reduced data of the hysteresis plot if desired.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="parameters.Prepare_parameters.stress_strain">
+<code class="sig-name descname">stress_strain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parameters.Prepare_parameters.stress_strain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claculating the stress and strain acording to time and cycles.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pipeline.html" class="btn btn-neutral float-right" title="pipeline module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="inputs.html" class="btn btn-neutral float-left" title="inputs module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, y
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

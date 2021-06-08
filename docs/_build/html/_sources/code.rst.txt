@@ -1,0 +1,46 @@
+code package
+============
+
+Submodules
+----------
+
+code.Gui\_Pipeline\_v2 module
+-----------------------------
+
+.. automodule:: code.Gui_Pipeline_v2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+code.Gui\_Pipeline\_v2 module
+-----------------------------
+
+.. automodule:: code.Gui_Pipeline_v2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+code.gui\_1 module
+------------------
+
+.. automodule:: code.gui_1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+code.gui\_2 module
+------------------
+
+.. automodule:: code.gui_2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: code
+   :members:
+   :undoc-members:
+   :show-inheritance:

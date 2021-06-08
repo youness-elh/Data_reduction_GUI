@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pipeline module &mdash; GUI  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="parameters module" href="parameters.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GUI
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">gui_tool_packages</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="inputs.html">inputs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameters.html">parameters module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pipeline module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GUI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">gui_tool_packages</a> &raquo;</li>
+        
+      <li>pipeline module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pipeline.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pipeline">
+<span id="pipeline-module"></span><h1>pipeline module<a class="headerlink" href="#module-pipeline" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pipeline.Pipeline">
+<em class="property">class </em><code class="sig-prename descclassname">pipeline.</code><code class="sig-name descname">Pipeline</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">inputfile</em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Instanciation of a specimen with loading the data set, claculating the target data and the parameters before fitting or starting data reduction algo.</p>
+<dl class="method">
+<dt id="pipeline.Pipeline.Export_output">
+<code class="sig-name descname">Export_output</code><span class="sig-paren">(</span><em class="sig-param">Output_file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.Export_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export reduced data into an excel file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pipeline.Pipeline.check_hyst">
+<code class="sig-name descname">check_hyst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.check_hyst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the hysteresis before fitting and data reduction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pipeline.Pipeline.check_reduced_hyst">
+<code class="sig-name descname">check_reduced_hyst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.check_reduced_hyst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the hysteresis of the reduced data after fitting
+:return: a plot if requred</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pipeline.Pipeline.fit_epsilon">
+<code class="sig-name descname">fit_epsilon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.fit_epsilon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starting fitting</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pipeline.Pipeline.fract_zeit">
+<code class="sig-name descname">fract_zeit</code><span class="sig-paren">(</span><em class="sig-param">eps_tol=0.03</em><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.fract_zeit" title="Permalink to this definition">¶</a></dt>
+<dd><p>fraction time: this is not accurate for all test data set, another method should be implemented</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pipeline.Pipeline.run_reduction">
+<code class="sig-name descname">run_reduction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.run_reduction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run data reduction algo.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pipeline.Pipeline.sub_ranges">
+<code class="sig-name descname">sub_ranges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pipeline.Pipeline.sub_ranges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deviding the data into sub ranges so that data reduction algo is optimized</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="parameters.html" class="btn btn-neutral float-left" title="parameters module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, y
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

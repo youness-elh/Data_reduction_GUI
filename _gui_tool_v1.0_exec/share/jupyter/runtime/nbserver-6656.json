@@ -1,0 +1,11 @@
+{
+  "base_url": "/", 
+  "hostname": "localhost", 
+  "notebook_dir": "C:\\Users\\elh", 
+  "password": false, 
+  "pid": 6656, 
+  "port": 8892, 
+  "secure": false, 
+  "token": "81823bc02c188d79f4200435dffbfabbfb4b03f0570da10c", 
+  "url": "http://localhost:8892/"
+}

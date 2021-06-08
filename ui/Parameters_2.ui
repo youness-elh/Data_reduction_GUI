@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Parameters</class>
+ <widget class="QDialog" name="Parameters">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>458</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>458</width>
+    <height>155</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>458</width>
+    <height>155</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Configure parameters</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icons/equalizer--pencil.png</normaloff>../icons/equalizer--pencil.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color:rgb(225, 227, 227)
+}
+</string>
+  </property>
+  <widget class="QComboBox" name="comboBox1">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>75</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Initial extensometer</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reference length</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diameter sample</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cycle time</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Number of cycles</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Data time step</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox2">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>75</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Number of strain points in one cycle</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Number of stress points in one cycle</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Maximum of fitting epsilon tolerance</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fitting step</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Epsilon</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="refresh">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>110</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Refresh for the current session!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(153, 197, 211);
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/arrow-circle-double.png</normaloff>../icons/arrow-circle-double.png</iconset>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>110</y>
+     <width>211</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Add to data base to run later!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(153, 197, 211);
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/plus-white.png</normaloff>../icons/plus-white.png</iconset>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>461</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(23, 156, 125);</string>
+   </property>
+   <property name="text">
+    <string>   Specimen name:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>54</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(92, 186, 164);</string>
+   </property>
+   <property name="text">
+    <string>  Fitting parameters:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label3">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>54</y>
+     <width>201</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(92, 186, 164);</string>
+   </property>
+   <property name="text">
+    <string>Data set parameters:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

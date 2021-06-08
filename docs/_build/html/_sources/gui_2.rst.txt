@@ -1,0 +1,7 @@
+gui\_2 module
+=============
+
+.. automodule:: gui_2
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Insert</class>
+ <widget class="QDialog" name="Insert">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>372</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add specimen</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icons/equalizer--pencil.png</normaloff>../icons/equalizer--pencil.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color:rgb(225, 227, 227)
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="frame">
+     <item row="2" column="0">
+      <widget class="QLabel" name="label2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(92, 186, 164);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Temperature:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label1">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(92, 186, 164);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Specimen name:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(92, 186, 164);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Specimen number:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit1">
+       <property name="toolTip">
+        <string>Please enter the sample name like the mentioned example!</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>AKT3-************ --&gt;'MANDATORY' (The key of database)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit2">
+       <property name="toolTip">
+        <string>Please enter the sample number like the mentioned example!</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>AKT-I-L**  --&gt;'NOT MANDATORY'</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit3">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Please enter the test tempereture! --&gt;'NOT MANDATORY'</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label1_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(23, 156, 125);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Specimen folder</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="lineEdit6">
+       <property name="toolTip">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot;&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Enter the absolute path of the folder where the output excel file is exported!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Please browse the folder in which outputs will be exported!</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit4">
+       <property name="toolTip">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot;&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Enter the absolute path to the folder containing the raw data!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Please browse a folder having '*.txt' files of the test dataset!</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit5">
+       <property name="toolTip">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot;&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Enter the absolute path to the file containing the test table!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Please browse the 'Excel(*.xls)' file containing the test table!</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label3_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(23, 156, 125);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Specimen test table</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label2_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(23, 156, 125);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Output folder</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label2_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(76, 153, 178);
+
+</string>
+       </property>
+       <property name="text">
+        <string>Fitting parameters</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="browse2">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Browse the file containing the test table!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QDialog{
+	font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color:rgb(225, 227, 227)
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../icons/inbox-table.png</normaloff>../icons/inbox-table.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="comboBox1">
+       <property name="toolTip">
+        <string>Please click on the parameter first to enter the value!</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgba(31, 130, 192);
+
+
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Initial extensometer</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Reference length</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Diameter sample</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cycle time</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Number of cycles</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Data time step</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="browse3">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Browse the folder where the output excel file is going to be exported!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QDialog{
+	font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color:rgb(225, 227, 227)
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../icons/inbox-document-text.png</normaloff>../icons/inbox-document-text.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label2_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgba(31, 130, 192);
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Data parameters</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="comboBox2">
+       <property name="toolTip">
+        <string>Please click on the parameter first to enter the value!</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(76, 153, 178);
+
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Number of strain points in one cycle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Number of stress points in one cycle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Maximum of fitting epsilon tolerance</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fitting step</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Epsilon</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="browse1">
+       <property name="toolTip">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Browse the folder containing the raw data!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QDialog{
+	font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color:rgb(225, 227, 227)
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../icons/inbox-document-text.png</normaloff>../icons/inbox-document-text.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="add">
+     <property name="statusTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Add to data base to run later!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 8pt &quot;Frutiger LT Com 55 Roman&quot;;
+background-color: rgb(153, 197, 211);
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../icons/plus-white.png</normaloff>../icons/plus-white.png</iconset>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <zorder>layoutWidget</zorder>
+  <zorder>add</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

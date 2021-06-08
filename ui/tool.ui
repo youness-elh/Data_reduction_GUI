@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>269</width>
+    <height>39</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>918</width>
+    <height>438</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Data processing toolbox</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icons/toolbox--pencil.png</normaloff>../icons/toolbox--pencil.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>269</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menudata">
+    <property name="title">
+     <string>Data reduction</string>
+    </property>
+    <addaction name="action_algo"/>
+    <addaction name="separator"/>
+    <addaction name="action_more"/>
+   </widget>
+   <widget class="QMenu" name="menuhelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <widget class="QMenu" name="menugui">
+     <property name="title">
+      <string>Data reduction</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../icons/stickman-smiley-question.png</normaloff>../icons/stickman-smiley-question.png</iconset>
+     </property>
+     <addaction name="action_ppt"/>
+     <addaction name="separator"/>
+     <addaction name="action_doc"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="menugui"/>
+    <addaction name="action_contact"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menudata"/>
+   <addaction name="menuhelp"/>
+  </widget>
+  <action name="action_algo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/wand-hat.png</normaloff>../icons/wand-hat.png</iconset>
+   </property>
+   <property name="text">
+    <string>Douglas-Peucker-Algo</string>
+   </property>
+  </action>
+  <action name="action_contact">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/user-silhouette-question.png</normaloff>../icons/user-silhouette-question.png</iconset>
+   </property>
+   <property name="text">
+    <string>Contact the developer</string>
+   </property>
+  </action>
+  <action name="action_ppt">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/projection-screen-presentation.png</normaloff>../icons/projection-screen-presentation.png</iconset>
+   </property>
+   <property name="text">
+    <string>PPT slides</string>
+   </property>
+  </action>
+  <action name="action_doc">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/document-code.png</normaloff>../icons/document-code.png</iconset>
+   </property>
+   <property name="text">
+    <string>Code doc</string>
+   </property>
+  </action>
+  <action name="action_more">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/construction.png</normaloff>../icons/construction.png</iconset>
+   </property>
+   <property name="text">
+    <string>Another method...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
